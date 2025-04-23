@@ -1,0 +1,26 @@
+{
+  "name": "mcp-janken-server",
+  "version": "0.1.0",
+  "description": "JANKEN MCP server",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "mcp-janken-server": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
+  }
+}
